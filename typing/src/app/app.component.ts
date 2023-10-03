@@ -7,8 +7,10 @@ import {lorem} from 'faker';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  /* PROPERTIES */
   randomText = lorem.sentence();
   enteredText = '';
+
   protected readonly oninput = oninput;
   onInput(value: string){
     this.enteredText = value
